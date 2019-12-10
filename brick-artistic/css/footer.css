@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+/* Footer */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem 1.5rem 0.75rem;
+  font-size: 0.88em;
+}
+
+.site-footer__menu {
+  margin-bottom: 1.5rem;
+}
+
+.footer-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu li {
+  margin: 0;
+}
+
+.footer-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  padding: 0.25rem 0;
+  color: var(--color__text-light);
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+  color: var(--color__accent);
+}
+
+.footer-menu a svg {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.site-copy {
+  color: var(--color__text-light);
+}
+
+.site-copy a {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color__text-light)), to(var(--color__text-light)));
+  background-image: linear-gradient(to right, var(--color__text-light) 0%, var(--color__text-light) 100%);
+  background-position: bottom 0 center;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+  color: var(--color__text-light);
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 var(--color__background-body), -0.05em 0 0 var(--color__background-body), 0 0.05em 0 var(--color__background-body), 0 -0.05em 0 var(--color__background-body), 0.1em 0 0 var(--color__background-body), -0.1em 0 0 var(--color__background-body), 0 0.1em 0 var(--color__background-body), 0 -0.1em 0 var(--color__background-body);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.site-copy a:hover,
+.site-copy a:focus {
+  outline: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color__accent)), to(var(--color__accent)));
+  background-image: linear-gradient(to right, var(--color__accent) 0%, var(--color__accent) 100%);
+  background-size: 100% 4px;
+  color: var(--color__accent);
+}

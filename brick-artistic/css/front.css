@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+.main-logo {
+  width: 38.19vw;
+}
+
+.front-content {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+}
+
+.primary-menu__toggle {
+    display: none;
+}
+
+.front-logo {
+  position: relative;
+  left:-1.5rem;
+  max-width: 38.19vw;
+}
+
+.main-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.back-image {
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front-navi {
+  position: absolute;
+  left: 32px;
+  bottom: 86px;
+  color: white;
+}
+
+.first-image {
+  z-index: 50;
+  transition: opacity 2s, visibility 2s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fixed-page-contents h2 {
+	margin-bottom: 0rem;
+}
+
+.entry-content p img {
+    margin: 0rem 0;
+}
+
+/* 透過度の設定*/
+.op25 {
+  opacity: 0.25;
+}
+.op33 {
+  opacity: 0.33;
+}
+.op50 {
+  opacity: 0.5;
+}
+.op66 {
+  opacity: 0.66;
+}
+.op75 {
+  opacity: 0.75;
+}

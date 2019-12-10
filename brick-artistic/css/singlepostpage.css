@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+
+/* Single Post & Page */
+.single .site-main,
+.page .site-main {
+  /* padding-top: 8rem; */
+}
+
+.entry-header {
+  padding: 0 1.5em;
+}
+
+.entry-content {
+  margin: 2rem 0 0;
+}
+
+.entry-content>*:not(pre):not(ul):not(ol) {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.entry-content .outset {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+}
+
+.entry-content .outset img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.entry-content p a {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color__accent)), to(var(--color__accent)));
+  background-image: linear-gradient(to right, var(--color__accent) 0%, var(--color__accent) 50%);
+  background-position: bottom 0 center;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+  color: var(--color__accent);
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 var(--color__background-body), -0.05em 0 0 var(--color__background-body), 0 0.05em 0 var(--color__background-body), 0 -0.05em 0 var(--color__background-body), 0.1em 0 0 var(--color__background-body), -0.1em 0 0 var(--color__background-body), 0 0.1em 0 var(--color__background-body), 0 -0.1em 0 var(--color__background-body);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.entry-content p a:hover,
+.entry-content p a:focus {
+  outline: 0;
+  background-size: 100% 4px;
+  color: var(--color__accent);
+}
+
+.entry-content blockquote.outset {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  max-width: 1024px;
+}
+
+.entry-content pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 648px;
+}
+
+.entry-content pre.outset {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.entry-content p img {
+  display: block;
+  margin: 2rem 0;
+}
+
+.entry-content p img.alignleft {
+  float: left;
+  margin: 0.5em 2em 1.5em 0;
+  max-width: 324px;
+}
+
+.entry-content p img.alignright {
+  float: right;
+  margin: 0.5em 0 1.5em 2em;
+  max-width: 324px;
+}
+
+.entry-content .gallery {
+  margin: 2rem auto;
+}
+
+.entry-content .wp-caption {
+  margin: 2em auto;
+  max-width: 100%;
+}
+
+.entry-content .wp-caption img {
+  display: block;
+  margin-bottom: 0;
+}
+
+.entry-content .wp-caption .wp-caption-text {
+  display: block;
+  margin: 0.75em 0;
+  padding-left: 0.75em;
+  color: var(--color__text-light);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+.entry-content .lead-text {
+  color: var(--color__text-light);
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+.entry-content .muted {
+  opacity: 0.5;
+}
+
+.entry-content .dropcap {
+  position: relative;
+  float: left;
+  margin: 0 1rem 0 0;
+  height: 4.5rem;
+  color: var(--color__headings);
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 0.85;
+}
+
+.entry-content .highlight {
+  background-color: var(--color__warning);
+  color: var(--color__text);
+}
+
+.entry-content .jetpack-portfolio-shortcode,
+.entry-content .jetpack-testimonial-shortcode,
+.entry-content #jp-relatedposts {
+  margin: 2em auto 0;
+  padding-top: 0;
+}
+
+.entry-content .responsive-embed {
+  margin: 2em auto;
+}
+
+.entry-title {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 768px;
+  text-align: center;
+}
+
+.entry-title a {
+  color: var(--color__headings);
+}
+
+.entry-meta-before-title {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.entry-meta-before-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.entry-meta-item {
+  display: inline-block;
+  color: var(--color__text-light);
+}
+
+.entry-meta-item:after {
+  margin-left: 0.5em;
+  content: '\00B7';
+}
+
+.entry-meta-item.last:after,
+.entry-meta-item:last-child:after {
+  margin: 0;
+  content: '';
+}
+
+.entry-meta-item a {
+  display: inline-block;
+}
+
+.entry-thumbnail {
+  display: block;
+  margin: 2rem 0 0;
+}
+
+.entry-thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.widget-area-after-content {
+  margin: 4rem auto 0;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 702px;
+  width: 100%;
+}
+
+.entry-footer {
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 702px;
+}

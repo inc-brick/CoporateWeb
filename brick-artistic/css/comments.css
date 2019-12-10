@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+/* Comments */
+.comments-area {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 702px;
+}
+
+.comment-list,
+.children {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.comment-list {
+  margin-left: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color__gray);
+}
+
+.children {
+  margin-left: 5%;
+}
+
+.comment-body {
+  position: relative;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px solid var(--color__gray);
+  word-wrap: break-word;
+}
+
+.pingback .comment-body {
+  margin: 0 0 1.5rem 0;
+  padding: 1.5rem;
+  border-bottom: none;
+  background-color: var(--color__gray);
+}
+
+.pingback .comment-body .edit-link {
+  display: block;
+  float: right;
+}
+
+.comment-meta {
+  margin: 0 0 1.5rem 0;
+}
+
+.comment-author img {
+  display: block;
+  float: left;
+  clear: left;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.comment-author .says {
+  display: none;
+}
+
+.comment-author .fn,
+.comment-metadata {
+  display: block;
+  margin-left: 4.5rem;
+}
+
+.comment-author .fn a {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color__accent)), to(var(--color__accent)));
+  background-image: linear-gradient(to right, var(--color__accent) 0%, var(--color__accent) 100%);
+  background-position: bottom 0 center;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+  color: var(--color__accent);
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 var(--color__background-body), -0.05em 0 0 var(--color__background-body), 0 0.05em 0 var(--color__background-body), 0 -0.05em 0 var(--color__background-body), 0.1em 0 0 var(--color__background-body), -0.1em 0 0 var(--color__background-body), 0 0.1em 0 var(--color__background-body), 0 -0.1em 0 var(--color__background-body);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.comment-author .fn a:hover,
+.comment-author .fn a:focus {
+  outline: 0;
+  background-size: 100% 4px;
+  color: var(--color__accent);
+}
+
+.comment-metadata {
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.comment-metadata time,
+.comment-metadata .edit-link a {
+  margin-right: 0.5rem;
+}
+
+.comment-metadata a {
+  color: var(--color__text);
+  opacity: 0.5;
+}
+
+.reply {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75rem;
+  opacity: 0;
+}
+
+.reply a {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color__gray);
+  border-radius: 3px;
+  color: var(--color__text);
+}
+
+.reply a:hover,
+.reply a:focus {
+  background-color: var(--color__gray);
+}
+
+.comment-body:hover .reply {
+  opacity: 1;
+}
+
+.comment-content a {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color__accent)), to(var(--color__accent)));
+  background-image: linear-gradient(to right, var(--color__accent) 0%, var(--color__accent) 100%);
+  background-position: bottom 0 center;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+  color: var(--color__accent);
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 var(--color__background-body), -0.05em 0 0 var(--color__background-body), 0 0.05em 0 var(--color__background-body), 0 -0.05em 0 var(--color__background-body), 0.1em 0 0 var(--color__background-body), -0.1em 0 0 var(--color__background-body), 0 0.1em 0 var(--color__background-body), 0 -0.1em 0 var(--color__background-body);
+  word-wrap: break-word;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.comment-content a:hover,
+.comment-content a:focus {
+  outline: 0;
+  background-size: 100% 4px;
+  color: var(--color__accent);
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.comment-respond {
+  position: relative;
+}
+
+.comment-reply-title small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+.comment-reply-title small a {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color__danger);
+  border-radius: 3px;
+  background-color: var(--color__danger);
+  color: #fff;
+}
+
+.required {
+  color: var(--color__danger);
+}
+
+.comment-form .submit {
+  border-color: var(--color__accent);
+  background-color: var(--color__accent);
+  color: #fff;
+}
+
+.comment-form textarea {
+  min-height: 13.5rem;
+}
+
+.comments-title,
+.comment-reply-title {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+.comments-area,
+.comment-respond,
+.no-comments {
+  margin-top: 4rem;
+}
+
+.comment .comment-respond {
+  margin-top: 0;
+}

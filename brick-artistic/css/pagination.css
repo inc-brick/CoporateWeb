@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+
+/* Pagination */
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pagination__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin: 0 0.25rem;
+  padding: 0.5rem 0.875rem;
+  border: 1px solid var(--color__gray);
+  color: var(--color__text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+}
+
+.pagination__item:not(.pagination__item--prev):not(.pagination__item--next) {
+  display: none;
+}
+
+a.pagination__item:hover {
+  border-color: var(--color__accent);
+  background-color: var(--color__accent);
+  color: #fff;
+}
+
+a.pagination__item:focus {
+  outline: none;
+  border-color: var(--color__accent);
+  background-color: var(--color__accent);
+  color: #fff;
+}
+
+.pagination__item svg {
+  width: 11px;
+  height: 11px;
+}
+
+.pagination__item--current,
+.pagination__item--dots {
+  color: var(--color__text-light);
+}
+
+.pagination__item--prev svg {
+  margin-right: 0.5rem;
+}
+
+.pagination__item--next svg {
+  margin-left: 0.5rem;
+}
