@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+/* Post Navigation (Next/Previous Post) */
+.post-navigation {
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 702px;
+}
+
+.post-navigation .nav-links span {
+  display: block;
+  color: var(--color__text-light);
+  font-size: 0.875em;
+}
+
+.post-navigation .nav-links a {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color__accent)), to(var(--color__accent)));
+  background-image: linear-gradient(to right, var(--color__accent) 0%, var(--color__accent) 100%);
+  background-position: bottom 0 center;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+  color: var(--color__accent);
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 var(--color__background-body), -0.05em 0 0 var(--color__background-body), 0 0.05em 0 var(--color__background-body), 0 -0.05em 0 var(--color__background-body), 0.1em 0 0 var(--color__background-body), -0.1em 0 0 var(--color__background-body), 0 0.1em 0 var(--color__background-body), 0 -0.1em 0 var(--color__background-body);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-navigation .nav-links a:hover,
+.post-navigation .nav-links a:focus {
+  outline: 0;
+  background-size: 100% 4px;
+  color: var(--color__accent);
+}
+
+.post-navigation .nav-nxt {
+  margin-bottom: 1.5em;
+}
+
+.post-navigation .nav-pre span:before {
+  margin: 0 0.25em 0 0;
+  content: '\2190';
+}
+
+.post-navigation .nav-nxt span:after {
+  margin: 0 0 0 0.25em;
+  content: '\2192';
+}

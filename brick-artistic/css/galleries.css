@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+
+/* Galleries */
+.gallery {
+  display: grid;
+  grid-gap: 2px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.gallery.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery.gallery-columns-4 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery.gallery-columns-5 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery.gallery-columns-6 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery.gallery-columns-7 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery.gallery-columns-8 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery.gallery-columns-9 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+  justify-self: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.gallery-icon {
+  display: block;
+}
+
+.gallery-item a {
+  display: block;
+  margin: 0;
+}
+
+.gallery-item a:hover,
+.gallery-item a:focus {
+  opacity: 0.5;
+}
+
+.gallery-item img {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.gallery-caption {
+  display: block;
+  margin: 0.75em 0 2em;
+  font-size: 0.75em;
+}
+
+#main .entry-content .tiled-gallery {
+  margin: 2rem auto;
+  max-width: 1440px;
+}
+
+.tiled-gallery-caption {
+  pointer-events: none;
+}

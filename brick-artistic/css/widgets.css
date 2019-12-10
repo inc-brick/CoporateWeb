@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+/* Widgets */
+.widget {
+  word-wrap: break-word;
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+.widget:not(.widget_text) ul {
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.widget a {
+  color: var(--color__text);
+}
+
+.widget a:hover,
+.widget a:active,
+.widget a:focus {
+  color: var(--color__accent);
+  opacity: 1;
+}
+
+.widget_search .search-submit {
+  display: none;
+}
+
+.widget_calendar table {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.widget_calendar caption,
+.widget_calendar td,
+.widget_calendar th {
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  line-height: 2em;
+}
+
+.widget_calendar caption {
+  border-top: 1px solid var(--color__gray);
+}
+
+.widget.widget_recent_comments li,
+.widget.widget_recent_entries li {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid var(--color__gray);
+}
+
+.widget_rss .widget-title a {
+  display: block;
+}
+
+.widget_rss .widget-title a:first-child {
+  display: none;
+}
+
+.widget_rss li {
+  margin-bottom: 1.25em;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid var(--color__gray);
+}
+
+.widget_rss ul>li>a {
+  color: var(--color__text);
+  text-decoration: underline;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.widget_rss cite {
+  display: block;
+  margin: 0;
+  margin: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+.widget_rss .rss-date {
+  display: block;
+  margin: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+}
+
+.widget.widget_nav_menu ul ul {
+  margin-left: 1em;
+}
+
+.widget.jetpack_subscription_widget {
+  padding: 2.5em 2.25em 2.25em 2.25em;
+  background-color: var(--color__gray);
+}
+
+.widget.jetpack_subscription_widget .widget-title {
+  font-weight: 800;
+  font-size: 1.75em;
+}
+
+.widget.jetpack_subscription_widget form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.widget.jetpack_subscription_widget #subscribe-text {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  margin-top: -0.5rem;
+}
+
+.widget.jetpack_subscription_widget #subscribe-text h2 {
+  margin-bottom: 0.75rem;
+}
+
+.widget.jetpack_subscription_widget #subscribe-email {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.widget.jetpack_subscription_widget #subscribe-email input[type='email'] {
+  width: 100%;
+  border-color: var(--color__background-body);
+  background-color: var(--color__background-body);
+}
+
+.widget.jetpack_subscription_widget #subscribe-email input[type='email']:focus {
+  border-color: var(--color__accent);
+}
+
+.widget.jetpack_subscription_widget #subscribe-submit {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.widget.jetpack_subscription_widget #subscribe-submit input[type='submit'] {
+  width: 100%;
+  border-color: var(--color__accent);
+  background-color: var(--color__accent);
+  color: #fff;
+}
+
+.widget-area-secondary {
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: 702px;
+  width: 100%;
+}
+
+.widget-area-secondary>*+* {
+  margin-top: 4rem;
+}
+
+.widget-area-secondary__wrap {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  max-width: 702px;
+  width: 100%;
+}
+
+.widget-area-secondary__wrap>*+* {
+  margin-top: 4rem;
+}

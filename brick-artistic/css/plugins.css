@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+/**
+ * Plugins.
+ */
+/* Jetpafck Infinite Scroll */
+.infinite-scroll .pagination,
+.infinite-scroll.neverending #footer {
+  display: none;
+}
+
+.infinity-end.neverending #footer {
+  display: block;
+}
+
+#infinite-handle {
+  margin: 0 auto 1.5em;
+}
+
+#infinite-handle button {
+  margin-top: 1.5em;
+}
+
+.infinite-loader {
+  display: block;
+  margin-bottom: 1.5em;
+  height: 3em;
+}
+
+/* Jetpafck Contact Form */
+.contact-form.commentsblock>div {
+  margin-bottom: 1.25rem;
+}
+
+.grunion-field-label {
+  display: block;
+}
+
+.grunion-field-label span {
+  margin-left: 0.25rem;
+}
+
+.contact-submit .pushbutton-wide {
+  border-color: var(--color__accent);
+  background-color: var(--color__accent);
+  color: #fff;
+}
+
+blockquote.contact-form-submission {
+  margin: 0 0 1.25em 0;
+  padding: 1.25em 1.5em 0.5rem;
+  background-color: var(--color__gray);
+  font-style: normal;
+  font-size: 1rem;
+}
+
+blockquote.contact-form-submission:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+blockquote.contact-form-submission p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+blockquote.contact-form-submission br {
+  display: none;
+}
+
+/* Contact Form 7 */
+input[type='submit'].wpcf7-submit {
+  border-color: var(--color__accent);
+  background-color: var(--color__accent);
+  color: #fff;
+}
+
+.wpcf7 {
+  margin: 0;
+  padding: 0;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+}
+
+.wpcf7-not-valid-tip {
+  display: block;
+  color: var(--color__danger);
+  font-size: 1em;
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  z-index: 100;
+}
+
+.wpcf7-list-item {
+  display: block;
+  margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+  display: none;
+}
+
+.wpcf7 img.ajax-loader {
+  margin-left: 1.5em;
+  border: none;
+  vertical-align: middle;
+}
+
+.wpcf7 .ajax-error {
+  display: none;
+}
+
+/* Mailchimp for WordPress form. */
+.mc4wp-form {
+  margin-bottom: 2em;
+}
+
+.mc4wp-alert {
+  margin: 0 0 1.5rem;
+  margin: 2em 0;
+  padding: 0.75rem 1rem;
+  min-height: 3rem;
+  background-color: var(--color__text-light);
+  color: #fff;
+}
+
+.mc4wp-alert p {
+  margin-bottom: 0;
+}
+
+.mc4wp-success {
+  background-color: var(--color__success);
+}
+
+.mc4wp-error {
+  background-color: var(--color__danger);
+}
+
+.entry-content *+.mc4wp-form {
+  margin-top: 2em;
+}
+
+.brick-subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 2.5em 2.25em 2.5em 2.25em;
+  background-color: var(--color__gray);
+}
+
+.brick-subscribe-form-intro {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  margin-top: -0.5rem;
+}
+
+.brick-subscribe-form-intro h2 {
+  margin-bottom: 0.75rem;
+}
+
+.brick-subscribe-form-input {
+  width: 100%;
+}
+
+.brick-subscribe-form-input input[type='email'] {
+  width: 100%;
+  border-color: var(--color__background-body);
+  background-color: var(--color__background-body);
+}
+
+.brick-subscribe-form-input input[type='email']:focus {
+  border-color: var(--color__accent);
+}
+
+.brick-subscribe-form-button {
+  width: 100%;
+}
+
+.brick-subscribe-form-button .btn {
+  width: 100%;
+}
+
+/**
+ * Shame.
+ */
+.sticky {
+  display: block;
+}
+
+.aligncenter {
+  text-align: center;
+}

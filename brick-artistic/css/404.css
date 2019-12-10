@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*
+Theme Name:  Brick
+Author:      Brick.inc
+Description: brick original theme
+Author URI:  http://inc-brick.com/
+Version:     1.0.0
+*/
+
+/* 404 */
+.error-404 {
+  padding: 0 1.5rem;
+}
+
+.not-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 648px;
+  width: 100%;
+}
+
+.not-found>*+* {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.not-found__content {
+  width: 100%;
+  text-align: center;
+}
+
+.not-found__search {
+  width: 100%;
+}
